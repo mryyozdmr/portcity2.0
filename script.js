@@ -170,7 +170,7 @@ function initializeDynamicActivities() {
             
             if (activity === 'Gün Batımı Yürüyüşü') {
                 const img = document.createElement('img');
-                img.src = 'https://pixnio.com/free-images/2017/09/23/2017-09-23-14-20-31.jpg';
+                img.src = 'https://images.pexels.com/photos/1129615/pexels-photo-1129615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
                 img.alt = 'Gün Batımı Yürüyüşü';
                 img.style.cssText = 'width: 100%; height: 120px; object-fit: cover; border-radius: 10px; margin: 10px 0; display: block;';
                 li.appendChild(img);
