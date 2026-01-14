@@ -128,7 +128,9 @@ function initializeServiceDescriptions() {
 }
 
 function initializeDynamicActivities() {
-    if (!window.location.pathname.includes('index.html') && window.location.pathname !== '/' && window.location.pathname !== '') return;
+    const currentPath = window.location.pathname;
+    const isIndexPage = currentPath === '/' || currentPath === '' || currentPath.includes('index.html') || currentPath.endsWith('/');
+    if (!isIndexPage) return;
     
     const dynamicSection = document.createElement('div');
     dynamicSection.className = 'dynamic-activities';
@@ -182,7 +184,9 @@ function initializeDynamicActivities() {
 }
 
 function initializeLikeCounter() {
-    if (!window.location.pathname.includes('index.html') && window.location.pathname !== '/' && window.location.pathname !== '') return;
+    const currentPath = window.location.pathname;
+    const isIndexPage = currentPath === '/' || currentPath === '' || currentPath.includes('index.html') || currentPath.endsWith('/');
+    if (!isIndexPage) return;
     
     const likeContainer = document.createElement('div');
     likeContainer.className = 'like-container';
