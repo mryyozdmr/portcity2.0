@@ -128,17 +128,14 @@ function initializeServiceDescriptions() {
 }
 
 function initializeDynamicActivities() {
-    const currentPath = window.location.pathname;
-    const isIndexPage = currentPath === '/' || currentPath === '' || currentPath.includes('index.html') || currentPath.endsWith('/');
-    if (!isIndexPage) return;
+    const container = document.querySelector('.container');
+    if (!container) return;
     
     const dynamicSection = document.createElement('div');
     dynamicSection.className = 'dynamic-activities';
     dynamicSection.innerHTML = '<h3>🌊 Popüler Aktivitelerimiz</h3><ul id="activities-list"></ul>';
     
-    const container = document.querySelector('.container');
-    if (container) {
-        container.insertBefore(dynamicSection, container.lastElementChild);
+    container.insertBefore(dynamicSection, container.lastElementChild);
         
         const listElement = document.getElementById('activities-list');
         
@@ -180,7 +177,6 @@ function initializeDynamicActivities() {
             
             listElement.appendChild(li);
         });
-    }
 }
 
 function initializeLikeCounter() {
