@@ -15,8 +15,8 @@
         .nav a { color: white; text-decoration: none; margin: 0 20px; padding: 12px 24px; border-radius: 25px; transition: all 0.3s ease; font-weight: 500; }
         .nav a:hover { background: rgba(255,255,255,0.2); transform: translateY(-2px); }
         .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
-        .service-box { background: rgba(255,255,255,0.95); padding: 35px; margin: 25px 0; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); backdrop-filter: blur(10px); transition: transform 0.3s ease; }
-        .service-box:hover { transform: translateY(-5px); }
+        .content { background: rgba(255,255,255,0.95); padding: 40px; border-radius: 20px; margin: 30px 0; box-shadow: 0 10px 40px rgba(0,0,0,0.2); backdrop-filter: blur(10px); }
+        .section { margin: 30px 0; padding: 25px; background: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .service-header { display: flex; align-items: center; margin-bottom: 20px; }
         .service-icon { font-size: 2.5em; margin-right: 15px; }
         .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
@@ -46,123 +46,125 @@
     </div>
 
     <div class="container">
-        <h2 style="color: white; text-align: center; font-size: 2.5em; margin-bottom: 40px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Aktiviteler & Mekanlar</h2>
-
-        <div class="service-box">
-            <div class="service-header">
-                <div class="service-icon">🍽️</div>
-                <h3 style="color: #2a5298; font-size: 1.8em;">Restoranlar & Kafeler</h3>
-            </div>
-            <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 20px;"><b>Deniz Mutfağı Restoranı:</b> Taze deniz ürünleri ve geleneksel lezzetler</p>
-            <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 25px;"><b>Marina Kafe:</b> Kahve ve hafif atıştırmalıklar</p>
+        <div class="content">
+            <h2 style="color: #1e3c72; font-size: 2.5em; text-align: center; margin-bottom: 30px;">🎯 Aktiviteler & Mekanlar</h2>
             
-            <h4 style="color: #1e3c72; margin-bottom: 20px;">Popüler Menü Öğeleri</h4>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <strong>Izgara Levrek</strong><br>
-                    <span style="color: #2a5298; font-size: 1.2em; font-weight: bold;">₺85</span>
+            <div class="section">
+                <div class="service-header">
+                    <div class="service-icon">🍽️</div>
+                    <h3 style="color: #2a5298; font-size: 1.8em;">Restoranlar & Kafeler</h3>
                 </div>
-                <div class="menu-item">
-                    <strong>Karides Güveç</strong><br>
-                    <span style="color: #2a5298; font-size: 1.2em; font-weight: bold;">₺75</span>
-                </div>
-                <div class="menu-item">
-                    <strong>Deniz Salatası</strong><br>
-                    <span style="color: #2a5298; font-size: 1.2em; font-weight: bold;">₺45</span>
-                </div>
-                <div class="menu-item">
-                    <strong>Marina Burger</strong><br>
-                    <span style="color: #2a5298; font-size: 1.2em; font-weight: bold;">₺55</span>
+                <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 20px;"><b>Deniz Mutfağı Restoranı:</b> Taze deniz ürünleri ve geleneksel lezzetler</p>
+                <p style="font-size: 1.1em; line-height: 1.6; margin-bottom: 25px;"><b>Marina Kafe:</b> Kahve ve hafif atıştırmalıklar</p>
+                
+                <h4 style="color: #1e3c72; margin-bottom: 20px;">Popüler Menü Öğeleri</h4>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <strong>Izgara Levrek</strong><br>
+                        <span style="color: #2a5298; font-size: 1.2em; font-weight: bold;">₺85</span>
+                    </div>
+                    <div class="menu-item">
+                        <strong>Karides Güveç</strong><br>
+                        <span style="color: #2a5298; font-size: 1.2em; font-weight: bold;">₺75</span>
+                    </div>
+                    <div class="menu-item">
+                        <strong>Deniz Salatası</strong><br>
+                        <span style="color: #2a5298; font-size: 1.2em; font-weight: bold;">₺45</span>
+                    </div>
+                    <div class="menu-item">
+                        <strong>Marina Burger</strong><br>
+                        <span style="color: #2a5298; font-size: 1.2em; font-weight: bold;">₺55</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="service-box">
-            <div class="service-header">
-                <div class="service-icon">⛵</div>
-                <h3 style="color: #2a5298; font-size: 1.8em;">Deniz Sporları</h3>
+            <div class="section">
+                <div class="service-header">
+                    <div class="service-icon">⛵</div>
+                    <h3 style="color: #2a5298; font-size: 1.8em;">Deniz Sporları</h3>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <h5>Yelken kursu</h5>
+                        <p>Başlangıç seviyesi eğitimi</p>
+                    </div>
+                    <div class="activity-item">
+                        <h5>Jet ski kiralama</h5>
+                        <p>Saatlik kiralama imkanı</p>
+                    </div>
+                    <div class="activity-item">
+                        <h5>Balık tutma turları</h5>
+                        <p>Rehberli balıkçılık deneyimi</p>
+                    </div>
+                    <div class="activity-item">
+                        <h5>Dalış eğitimi</h5>
+                        <p>Sertifikalı dalış kursları</p>
+                    </div>
+                    <div class="activity-item">
+                        <h5>Kano ve kürek sporları</h5>
+                        <p>Sakin su sporları aktiviteleri</p>
+                    </div>
+                </div>
             </div>
-            <div class="activity-list">
-                <div class="activity-item">
-                    <h5>Yelken kursu</h5>
-                    <p>Başlangıç seviyesi eğitimi</p>
-                </div>
-                <div class="activity-item">
-                    <h5>Jet ski kiralama</h5>
-                    <p>Saatlik kiralama imkanı</p>
-                </div>
-                <div class="activity-item">
-                    <h5>Balık tutma turları</h5>
-                    <p>Rehberli balıkçılık deneyimi</p>
-                </div>
-                <div class="activity-item">
-                    <h5>Dalış eğitimi</h5>
-                    <p>Sertifikalı dalış kursları</p>
-                </div>
-                <div class="activity-item">
-                    <h5>Kano ve kürek sporları</h5>
-                    <p>Sakin su sporları aktiviteleri</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="service-box">
-            <div class="service-header">
-                <div class="service-icon">🏪</div>
-                <h3 style="color: #2a5298; font-size: 1.8em;">Alışveriş & Hizmetler</h3>
+            <div class="section">
+                <div class="service-header">
+                    <div class="service-icon">🪂</div>
+                    <h3 style="color: #2a5298; font-size: 1.8em;">Alışveriş & Hizmetler</h3>
+                </div>
+                <p style="font-size: 1.1em; margin-bottom: 20px;">Marina kompleksinde bulunan hizmet alanları:</p>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <h5>Denizcilik malzemeleri mağazası</h5>
+                    </div>
+                    <div class="activity-item">
+                        <h5>Hediyelik eşya dükkanı</h5>
+                    </div>
+                    <div class="activity-item">
+                        <h5>Teknik servis ve bakım</h5>
+                    </div>
+                    <div class="activity-item">
+                        <h5>Yakıt istasyonu</h5>
+                    </div>
+                </div>
             </div>
-            <p style="font-size: 1.1em; margin-bottom: 20px;">Marina kompleksinde bulunan hizmet alanları:</p>
-            <div class="activity-list">
-                <div class="activity-item">
-                    <h5>Denizcilik malzemeleri mağazası</h5>
-                </div>
-                <div class="activity-item">
-                    <h5>Hediyelik eşya dükkanı</h5>
-                </div>
-                <div class="activity-item">
-                    <h5>Teknik servis ve bakım</h5>
-                </div>
-                <div class="activity-item">
-                    <h5>Yakıt istasyonu</h5>
-                </div>
+
+            <div class="section">
+                <h3 style="color: #1e3c72; text-align: center; font-size: 2em; margin-bottom: 25px;">💰 Fiyat Listesi</h3>
+                <table class="price-table">
+                    <tr>
+                        <th>Hizmet</th>
+                        <th>Süre</th>
+                        <th>Fiyat</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Yat Park Ücreti</strong></td>
+                        <td>Günlük</td>
+                        <td><strong style="color: #2a5298;">₺150</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Yelken Kursu</strong></td>
+                        <td>4 Saat</td>
+                        <td><strong style="color: #2a5298;">₺300</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Jet Ski Kiralama</strong></td>
+                        <td>1 Saat</td>
+                        <td><strong style="color: #2a5298;">₺200</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Balık Tutma Turu</strong></td>
+                        <td>3 Saat</td>
+                        <td><strong style="color: #2a5298;">₺250</strong></td>
+                    </tr>
+                </table>
             </div>
-        </div>
 
-        <div class="service-box">
-            <h3 style="color: #1e3c72; text-align: center; font-size: 2em; margin-bottom: 25px;">💰 Fiyat Listesi</h3>
-            <table class="price-table">
-                <tr>
-                    <th>Hizmet</th>
-                    <th>Süre</th>
-                    <th>Fiyat</th>
-                </tr>
-                <tr>
-                    <td><strong>Yat Park Ücreti</strong></td>
-                    <td>Günlük</td>
-                    <td><strong style="color: #2a5298;">₺150</strong></td>
-                </tr>
-                <tr>
-                    <td><strong>Yelken Kursu</strong></td>
-                    <td>4 Saat</td>
-                    <td><strong style="color: #2a5298;">₺300</strong></td>
-                </tr>
-                <tr>
-                    <td><strong>Jet Ski Kiralama</strong></td>
-                    <td>1 Saat</td>
-                    <td><strong style="color: #2a5298;">₺200</strong></td>
-                </tr>
-                <tr>
-                    <td><strong>Balık Tutma Turu</strong></td>
-                    <td>3 Saat</td>
-                    <td><strong style="color: #2a5298;">₺250</strong></td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="info-box">
-            <h4 style="color: #1e3c72; font-size: 1.5em; margin-bottom: 15px;">📞 Rezervasyon ve Bilgi</h4>
-            <p style="font-size: 1.1em; margin-bottom: 10px;">Tüm aktiviteler için önceden rezervasyon yapılması önerilir.</p>
-            <p style="font-size: 1.1em;"><i>Grup indirimleri ve sezon kampanyaları için iletişime geçiniz.</i></p>
+            <div class="info-box">
+                <h4 style="color: #1e3c72; font-size: 1.5em; margin-bottom: 15px;">📞 Rezervasyon ve Bilgi</h4>
+                <p style="font-size: 1.1em; margin-bottom: 10px;">Tüm aktiviteler için önceden rezervasyon yapılması önerilir.</p>
+                <p style="font-size: 1.1em;"><i>Grup indirimleri ve sezon kampanyaları için iletişime geçiniz.</i></p>
+            </div>
         </div>
     </div>
 
